@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_complete_guide/models/meals.dart';
+import '../models/meals.dart';
 
 class MealItem extends StatelessWidget {
-  void selectMeal() {}
   final String imageUrl;
   final String title;
   final int duration;
-  final Complexity;
-  final Affordability;
+  final Complexity complexity;
+  final Affordability affordability;
 
   MealItem(
-      @required this.title,
-      @required this.imageUrl,
-      @required this.duration,
-      @required this.Complexity,
-      @required this.Affordability);
+      {this.title,
+      this.imageUrl,
+      this.duration,
+      this.complexity,
+      this.affordability});
+  void selectMeal() {}
 
   @override
   Widget build(BuildContext context) {
